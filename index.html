@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Language" content="en" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>A moving car in CSS3</title>
+	<meta name="description" content="Fun demo of CSS3 animations that simulate a moving toy car">
+	<meta name="keywords" content="CSS3 animation">
+	<meta name="author" content="Ray Hyde | www.rayhyde.nl">
+	<link href='https://fonts.googleapis.com/css?family=Carter+One' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/travelling_car.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>A moving car in CSS3</h1>
+		<div id="car-explain">
+			<h4>Just a bunch of CSS animations</h4>
+			<ol>
+				<li>The "road" is a &lt;ul&gt; with a few &lt;li&gt;'s. The &lt;ul&gt; animates between margin-left -120px and 0px,</li>
+				<li>the entire car moves between 10% left and 37% left, alternating,</li>
+				<li>the green key animates rotate-y, and</li>
+				<li>the wheels rotate individually, so they're slightly off kilter.</li>
+			</ol>
+			<p><a href="https://github.com/RayHyde/travelling_car">Download from Github</a></p>
+		</div>
+		<div id="car-wrap">
+			<div id="car">
+				<div class="body">
+					<div class="wheel wheel1"></div>
+					<div class="wheel wheel2"></div>
+				</div>
+				<div class="key"></div>
+			</div>
+			<div id="road">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	<div id="explain">
+		<p>This project is part of my Playground - a collection of fun (and dare I say it: clever) stuff I made in the past, from jQuery games and plugins to CSS animation tricks.</p>
+		<p>Please drop in on my portfolio site <a href="http://www.rayhyde.nl">www.rayhyde.nl</a>!</p>
+	</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+@keyframes road {
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: -116px;
+	}
+}
+
+@keyframes car {
+	0% {
+		left: 10%;
+	}
+	100% {
+		left: 37%;
+	}
+}
+
+@keyframes wheel1 {
+	0% {
+		transform: rotate(-320deg);
+	}
+	100% {
+		transform: rotate(319deg);
+	}
+}
+
+@keyframes wheel2 {
+	0% {
+		transform: rotate(-350deg);
+	}
+	100% {
+		transform: rotate(349deg);
+	}
+}
+
+@keyframes key {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+@-webkit-keyframes road {
+	0% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: -116px;
+	}
+}
+
+@-webkit-keyframes car {
+	0% {
+		left: 10%;
+	}
+	100% {
+		left: 37%;
+	}
+}
+
+@-webkit-keyframes wheel1 {
+	0% {
+		-webkit-transform: rotate(-320deg);
+	}
+	100% {
+		-webkit-transform: rotate(319deg);
+	}
+}
+
+@-webkit-keyframes wheel2 {
+	0% {
+		-webkit-transform: rotate(-359deg);
+	}
+	100% {
+		-webkit-transform: rotate(358deg);
+	}
+}
+
+@-webkit-keyframes key {
+	0% {
+		-webkit-transform: rotateY(0deg);
+	}
+	100% {
+		-webkit-transform: rotateY(360deg);
+	}
+}
+
+#car-wrap {
+	width: 600px;
+	height: 400px;
+	background: lightblue;
+	position: relative;
+	overflow: hidden;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0 0 20px #222 inset;
+	-moz-box-shadow: 0 0 20px #222 inset;
+	box-shadow: 0 0 20px #222 inset;
+	float: left;
+	#car {
+		width: 323px;
+		height: 332px;
+		position: absolute;
+		bottom: 30px;
+		left: 40px;
+		z-index: 99;
+		-webkit-animation: car 10s infinite alternate;
+		animation: car 10s infinite alternate;
+		.body {
+			width: 323px;
+			height: 330px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background: url(../img/carbody.png) 0 20px no-repeat;
+			.wheel {
+				background: url(../img/carwheel.png) 0 0 no-repeat;
+				position: absolute;
+				bottom: 1px;
+				width: 102px;
+				height: 102px;
+				&.wheel1 {
+					left: 24px;
+					-webkit-animation: wheel1 1s linear infinite;
+					animation: wheel1 1s linear infinite;
+				}
+				&.wheel2 {
+					left: 203px;
+					-webkit-animation: wheel2 1s linear infinite;
+					animation: wheel2 1s linear infinite;
+				}
+			}
+		}
+	}
+	.key {
+		width: 178px;
+		height: 116px;
+		position: absolute;
+		left: 82px;
+		background: url(../img/key.png) 0 0 no-repeat;
+		-webkit-animation: key 5s linear infinite;
+		animation: key 5s linear infinite;
+	}
+	#road {
+		width: 600px;
+		height: 100px;
+		background: #222;
+		position: absolute;
+		bottom: 0;
+		width: 900px;
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				margin: 30px 20px 0 0;
+				width: 96px;
+				background: #fff;
+				height: 15px;
+				list-style-type: none;
+				display: inline-block;
+				&:first-child {
+					-webkit-animation: road 0.5s linear infinite;
+					animation: road 0.5s linear infinite;
+				}
+			}
+		}
+	}
+}
